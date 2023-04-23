@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GUVI: Zen Class — Part 1: Find the culprits</title>
+</head>
+<body>
+  <h1>Hello Guvi My Tasks</h1>
+  <h2>Day6 Tasks -GUVI: Zen Class — Part 1: Find the culprits and nail them — debugging javascript</h2>
+  <h2>By ...Boobathi Thillan...</h2>
+  <h3>(1) Find the culprit</h3><p>
+    <pre>&lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&lt;head&gt;<br>&lt;/head&gt; <b>[Head tag added to html]</b><br>&lt;body&gt;<br> &lt;script&gt;<br><b> alert( "I’m JavaScript!"); => [Single and Double Quotation Error Corrected]</b><br> &lt;/script&gt;<br>&lt;/body&gt;<br>&lt;/html&gt
+  </pre></p>
+    
+  <h3>(2) Find the culprit and invoke the alert</h3><p><pre>&lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&lt;head&gt;<br>&lt;/head&gt; <b>[Head tag added to html]</b><br>&lt;body&gt;<br> &lt; <b>script src=”scripts.js”&gt; &lt;/script&gt;  =>[Source Name & Single and Double Quotation Error Corrected] </b><br>&lt;/body&gt;<br>&lt;/html&gt;<br>
+    <pre>scripts.js //JavaScript Source Name <br><b>alert("I’m invoked!");   [Single and Double Quotaation Error Corrected]</b></pre>
+  </pre></p> 
+
+ <h3>(3) Explain the below how it works</h3><p>
+    <pre><h3>explain.html</h3><br>&lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&lt;head&gt;<br>&lt;/head&gt; <b>[Head tag added to html]</b><br>&lt;body&gt;<br> &lt;script src="scripts.js"&gt;&lt;/script&gt; <b>// Javascript source linked with HTML</b><br>&lt;/body&gt;<br>&lt;/html&gt;
+    <pre><b>scripts.js </b>//JavaScript Source Name <br><p></p>alert("I'm JavaScript!");<br>alert('Hello') <b> // Semi-Colon Not Mandatory for JAVASCRIPT</b> <br>alert(`Wor<br> ld`)<br>alert(3 +<br>1<br>+ 2);<b> // this is multiple line code and its working</b></p></pre></pre>
+  </p>
+  <h3>(4) Fix the below to alert Guvi geek</h3>
+  <pre>&lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&lt;head&gt;<br>&lt;/head&gt; <b>[Head tag added to html]</b><br>&lt;body&gt;<br> &lt;script src="scripts.js"&gt;&lt;/script&gt;<b>[Single or Double Quotation Error Corrected]</b><br>&lt;/body&gt;<br>&lt;/html&gt;
+    <pre><b>scripts.js </b>//JavaScript Source Name <br><p>let admin=9, fname=10.5; <br>fname = "Guvi";<br>let lname = "geek"<br>admin = fname+" "+lname; <br>alert(admin); // "Guvi geek" </p></pre>
+  </pre>
+
+  <h3>(5) Fix the below to alert hello Guvi geek</h3>
+  <pre>
+    <h3>fix.html</h3><br>&lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&lt;head&gt;<br>&lt;/head&gt; <b>[Head tag added to html]</b><br>&lt;body&gt;<br> &lt;script src="scripts.js"&gt;&lt;/script&gt;<b>[Single or Double Quotation Error Corrected]</b><br>&lt;/body&gt;<br>&lt;/html&gt;
+    <pre><b>scripts.js </b>//JavaScript Source Name <br><p>let fname=10.5; <br>fname = "Guvi";<br>let lname = "geek"<br>let Fullname = fname+" "+lname; <br>alert("hello "+Fullname);</p></pre>
+  </pre>
+
+  <h3>(6) Fix the below to alert sum of two numbers</h3>
+  <pre>
+    <h3>fix.html</h3><br>&lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&lt;head&gt;<br>&lt;/head&gt; <b>[Head tag added to html]</b><br>&lt;body&gt;<br> &lt;script src="scripts.js"&gt;&lt;/script&gt;<b>[Single or Double Quotation Error Corrected]</b><br>&lt;/body&gt;<br>&lt;/html&gt;
+    <pre><b>scripts.js </b>//JavaScript Source Name <br><p>let a = prompt("First number?");<br>let b = prompt("Second number?");<br>let Sum= Number(a)+Number(b); <b>//Sum declared and String Converted to Number</b><br> alert(Sum);</p></pre>
+  </pre>
+
+  <h3>(7) If you run the below scritpt you will get “Code is Blasted”<br>Explain Why the Code is blasted and how to diffuse it and get “Diffused”.</h3>
+  <pre>
+    <h3>fix.html</h3><br>&lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&lt;head&gt;<br>&lt;/head&gt; <b>[Head tag added to html]</b><br>&lt;body&gt;<br> &lt;script src="scripts.js"&gt;&lt;/script&gt;<b>[Single or Double Quotation Error Corrected]</b><br>&lt;/body&gt;<br>&lt;/html&gt;
+    <pre><b>scripts.js </b>//JavaScript Source Name <br><p>var a = Number("2") > Number("12"); <b>//  String are converted to Numbers</b> <br>//Don't touch below this<br>if (a) {<br>  console.log("Code is Blasted");<br>}<br>else<br>{<br>  console.log("Diffused"); <br>}</p></pre>
+  </pre>
+
+
+  <h3>(8) How to get the success in console</h3>
+  <pre>
+    <h3>fix.html</h3><br>&lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&lt;head&gt;<br>&lt;/head&gt; <b>[Head tag added to html]</b><br>&lt;body&gt;<br> &lt;script src="scripts.js"&gt;&lt;/script&gt;<b>[Single or Double Quotation Error Corrected]</b><br>&lt;/body&gt;<br>&lt;/html&gt;
+    <pre><b>scripts.js </b>//JavaScript Source Name <br><p>let a = prompt("Enter a number?"); <br>a=(a===0); <br> <b>//Don't modify any code below this</b> <br>if (a) {<br> console.log( 'OMG it works for any number inc 0' );<br>}<br>else<br>{<br> console.log( "Success" ); <br>}</p></pre>
+  </pre>
+
+  <h3>(9) How to get the correct score in console.</h3>
+  <pre>
+    <h3>fix.html</h3><br>&lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&lt;head&gt;<br>&lt;/head&gt; <b>[Head tag added to html]</b><br>&lt;body&gt;<br> &lt;script src="scripts.js"&gt;&lt;/script&gt;<b>[Single or Double Quotation Error Corrected]</b><br>&lt;/body&gt;<br>&lt;/html&gt;
+    <pre><b>scripts.js </b>//JavaScript Source Name <br><p>let value = Number(prompt('How many runs you scored in this ball')); <b>String Converted to Number</b><br>if (value === 4) { <br>  console.log("You hit a Four");<br>} else if (value === 6) {<br>console.log("You hit a Six");<br>} else {<br> console.log("I couldn't figure out"); <br>}</p></pre>
+  </pre>
+
+  <h3>(10) Fix the code to welcome the Employee</h3>
+  <pre>
+    <h3>fix.html</h3><br>&lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&lt;head&gt;<br>&lt;/head&gt; <b>[Head tag added to html]</b><br>&lt;body&gt;<br> &lt;script src="scripts.js"&gt;&lt;/script&gt;<b>[Single or Double Quotation Error Corrected]</b><br>&lt;/body&gt;<br>&lt;/html&gt;
+    <pre><b>scripts.js </b>//JavaScript Source Name <br>let login = 'Employee';<br>let message = (login == 'Employee') ? 'Welcome': <b> => Expression added for Employee</b><br>  (login == 'Director') ? 'Greetings' :<br>  (login == '') ? 'No login' :<br>  '';<br> console.log(message);</p></pre>
+  </pre>
+
+  <h3>(11) Fix the code to welcome the boss</h3>
+  <pre>
+    <h3>fix.html</h3><br>&lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&lt;head&gt;<br>&lt;/head&gt; <b>[Head tag added to html]</b><br>&lt;body&gt;<br> &lt;script src="scripts.js"&gt;&lt;/script&gt;<b>[Single or Double Quotation Error Corrected]</b><br>&lt;/body&gt;<br>&lt;/html&gt;
+    <pre><b>scripts.js </b>//JavaScript Source Name <br>let message;<br>if (null || 2 || undefined )<br>{<br>message = "welcome boss"; <b>=>Declaration Removed</b><br>}<br>else<br>{<br>message = "Go away"; <b>=>Declaration removed</b><br>}<br> console.log(message);</p></pre>
+  </pre>
+
+  <h3>(12) Fix the code to welcome the boss</h3>
+  <pre>
+    <h3>fix.html</h3><br>&lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&lt;head&gt;<br>&lt;/head&gt; <b>[Head tag added to html]</b><br>&lt;body&gt;<br> &lt;script src="scripts.js"&gt;&lt;/script&gt;<b>[Single or Double Quotation Error Corrected]</b><br>&lt;/body&gt;<br>&lt;/html&gt;
+    <pre><b>scripts.js </b>//JavaScript Source Name <br>let message;<br>let lock;<b>  =>Assigned value removed.</b><br>if (null || lock || undefined )<br>{<br>message = "Go away"; <br>}<br>else<br>{<br>message = "Welcome"; <br>}<br> console.log(message);</p></pre>
+  </pre>
+
+  <h3>(13) Fix the code to welcome the boss</h3>
+  <pre>
+    <h3>fix.html</h3><br>&lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&lt;head&gt;<br>&lt;/head&gt; <b>[Head tag added to html]</b><br>&lt;body&gt;<br> &lt;script src="scripts.js"&gt;&lt;/script&gt;<b>[Single or Double Quotation Error Corrected]</b><br>&lt;/body&gt;<br>&lt;/html&gt;
+    <pre><b>scripts.js </b>//JavaScript Source Name <br>let message;<br>let lock;<b>  =>Assigned value removed.</b><br>if (lock &amp;&amp; " " || undefined )<br>{<br>  message = "Go away";<br>}<br>else<br>{<br> message = "welcome";<br>}<br>console.log(message);</p></pre>
+  </pre>
+
+    
+  <h3>(14) Change the code to print</h3>
+  <pre>
+    <h3>fix.html</h3><br>&lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&lt;head&gt;<br>&lt;/head&gt; <b>[Head tag added to html]</b><br>&lt;body&gt;<br> &lt;script src="scripts.js"&gt;&lt;/script&gt;<b>[Single or Double Quotation Error Corrected]</b><br>&lt;/body&gt;<br>&lt;/html&gt;
+    <pre><b>scripts.js </b>//JavaScript Source Name <br>//You can change only 2 characters<br>let i=3;<br>while (i>0) <b>=> Added this =>i value compared to 0</b><br>{<br>  console.log( --i );<br>}</p></pre>
+  </pre>
+ 
+ 
+
+  <script src="scripts.js"></script>
+</body>
+</html>
